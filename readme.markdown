@@ -1,10 +1,4 @@
-= Christian Neukirchen's Ruby Style Guide
-
-You may not like all rules presented here, but they work very well for
-me and have helped producing high quality code.  Everyone is free to
-code however they want, write and follow their own style guides, but
-when you contribute to my code, please follow these rules:
-
+= Sascha Teske's Ruby Style Guide
 
 == Formatting:
 
@@ -14,10 +8,9 @@ when you contribute to my code, please follow these rules:
 
 * Use Unix-style line endings.
 
-* Use spaces around operators, after commas, colons and semicolons,
-  around { and before }.
+* Use spaces around operators, after commas, colons and semicolons, before "{" "}".
 
-* No spaces after (, [ and before ], ).
+* No spaces after "(", "[" and before "]", ")".
 
 * Use two spaces before statement modifiers (postfix
   if/unless/while/until/rescue).
@@ -32,7 +25,7 @@ when you contribute to my code, please follow these rules:
 
 * Use empty lines to break up a long method into logical paragraphs.
 
-* Keep lines fewer than 80 characters.
+* Keep lines fewer than 80 characters or have good reason not to.
 
 * Avoid trailing whitespace.
 
@@ -45,6 +38,8 @@ when you contribute to my code, please follow these rules:
 
 * Never use then.
 
+* Try to use "'" over """ and "%q()" over "%Q()"
+
 * Use when x; ... for one-line cases.
 
 * Use &&/|| for boolean expressions, and/or for control flow.  (Rule
@@ -53,12 +48,8 @@ when you contribute to my code, please follow these rules:
 
 * Avoid multiline ?:, use if.
 
-* Suppress superfluous parentheses when calling methods, but keep them
-  when calling "functions", i.e. when you use the return value in the
-  same line.
-
-    x = Math.sin(y)
-    array.delete e
+* Methods should have parenthesized options, unless the are called as DSL components
+  (e.g. Witness.new(:statement => 'Lots of important stuff', :format => :plaintext) but  read_a :book, :when_it_is_interesting)
 
 * Prefer {...} over do...end.  Multiline {...} is fine: having
   different statement endings (} for blocks, end for if/while/...)
