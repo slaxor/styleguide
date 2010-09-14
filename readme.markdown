@@ -1,6 +1,7 @@
-= Sascha Teske's Ruby Style Guide
-
-== Formatting:
+Sascha Teske's Ruby Style Guide
+===============================
+Formatting:
+-----------
 
 * Use ASCII (or UTF-8, if you have to).
 
@@ -30,7 +31,8 @@
 * Avoid trailing whitespace.
 
 
-== Syntax:
+Syntax:
+-------
 
 * Use def with parentheses when there are arguments.
 
@@ -71,8 +73,8 @@
   =~, $0-9, $~, $` and $' when needed.
 
 
-== Naming:
-
+Naming:
+-------
 * Use snake_case for methods.
 
 * Use CamelCase for classes and modules.  (Keep acronyms like HTTP,
@@ -113,7 +115,8 @@
   size over length.
 
 
-== Comments:
+Comments:
+---------
 
 * Comments longer than a word are capitalized and use punctuation.
   Use two spaces after periods.
@@ -121,7 +124,8 @@
 * Avoid superfluous comments.
 
 
-== The rest:
+The rest:
+---------
 
 * Write ruby -w safe code.
 
@@ -145,7 +149,8 @@
 * Avoid needless metaprogramming.
 
 
-== General:
+General:
+--------
 
 * Code in a functional way, avoid mutation when it makes sense.
 
