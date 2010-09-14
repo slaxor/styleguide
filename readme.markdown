@@ -50,7 +50,7 @@ Syntax:
 
 * Avoid multiline ?:, use if.
 
-* Methods should have parenthesized options, unless the are called as DSL components
+* Methods should have parenthesized options, unless they are called as DSL components
   (e.g. Witness.new(:statement => 'Lots of important stuff', :format => :plaintext) but  read_a :book, :when_it_is_interesting)
 
 * Prefer {...} over do...end.  Multiline {...} is fine: having
