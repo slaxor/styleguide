@@ -3,7 +3,7 @@ Sascha Teske's Ruby Style Guide
 Formatting:
 -----------
 
-* Use ASCII (or UTF-8, if you have to).
+* Use UTF-8 but try to remain in the 7-bit ASCII realm.
 
 * Use 2 space indent, no tabs.
 
